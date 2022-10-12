@@ -1,0 +1,8 @@
+---
+- name: sample task
+  shell: uname -a
+
+- name: Install the webserver
+  ansible.builtin.apt:
+    name: apache2
+    update_cache: yes
